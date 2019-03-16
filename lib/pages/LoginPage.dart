@@ -147,32 +147,4 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
-//  void netLogin(String account, String pass) async {
-//    if (account.trim() == '') {
-//      DialogUtils.show(context, '提示', '账号不能为空');
-//      return;
-//    }
-//
-//    if (pass.trim() == '') {
-//      DialogUtils.show(context, '提示', '密码不能为空');
-//      return;
-//    }
-//    String url = Api.LOGIN;
-//    var map = {'username': account, 'password': pass};
-//
-//    NetUtils.post(url, params: map).then((data) {
-//      if (data != null) {
-//        Map<String, dynamic> map = json.decode(data);
-//
-//        if (map['code'] == 1000) {
-//          var msg = map['data'];
-//          DialogUtils.show(context, '提示', '登录成功');
-//        } else {
-//          DialogUtils.show(context, '提示', '登录失败');
-//        }
-//
-//        setState(() {});
-//      }
-//    });
-//  }
 }
